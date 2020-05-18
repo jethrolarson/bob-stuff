@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Major";
+  src: url("assets/MAJOR.otf");
+}
+@font-face {
+  font-family: "Minion";
+  src: url("assets/Minion Pro Regular.ttf");
+}
+html {
+  background: #000;
+  font-size: 15px;
+  font-family: "Minion", sans-serif;
+  line-height: 1.5;
+}
+
+*:target {
+  color: hsl(0, 71%, 39%);
+}
+
+@media print {
+  html {
+    background: #fff;
+    overflow: visible;
+  }
+  body {
+    width: auto;
+    margin: 0;
+    overflow: visible;
+  }
+  .key {
+    display: block;
+  }
+}
+@media print {
+  @page {
+    size: landscape;
+  }
+}
+
+small {
+  font-size: 1rem;
+  color: #666;
+}
+
+h1 {
+  margin: 20px 0;
+}
+h2 {
+  text-align: center;
+}
+dl {
+  margin: 0;
+}
+dt,
+dd {
+  margin: 0;
+  display: inline;
+}
+
+dd {
+  margin: 0;
+  font-size: 14px;
+}
+dt:before {
+  display: block;
+  content: "";
+}
+h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-family: "Major";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 20px 0 4px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+ol,
+ul {
+  margin: 5px 0;
+  padding: 0 0 0 14px;
+}
+
+table {
+  font-size: 14px;
+  margin: 5px auto;
+}
+th,
+td {
+  padding: 1px 5px;
+}
+th {
+  -webkit-print-color-adjust: exact;
+  background: #222;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+td {
+  -webkit-print-color-adjust: exact;
+  background: #eee;
+}
+
+.pageBreak {
+  page-break-before: always;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 12px;
+}
+ul li:after {
+  content: "";
+  height: 0.4em;
+  width: 0.4em;
+  background: #000;
+  display: block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 8px;
+  left: -0px;
+}
+
+.goto {
+  font-size: 1.3rem;
+  font-family: "Major";
+  background: black;
+  color: white;
+  padding: 2px 10px 4px;
+  text-decoration: none;
+}
+.goto:hover {
+  color: firebrick;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #000;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked {
+  background: red;
+}
+input[type="checkbox"]:focus {
+  outline: 1px solid red;
+}
