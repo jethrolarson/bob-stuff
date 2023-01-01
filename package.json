@@ -12,7 +12,7 @@
   "author": "jethro larson",
   "license": "UNLICENSED",
   "devDependencies": {
-    "parcel": "^1.12.4",
+    "parcel": "^2.8.2",
     "typescript": "^3.9.2"
   },
   "dependencies": {
